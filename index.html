@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO||APP</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+   
+</head>
+<style>
+body{
+    background-image: url("p.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.tp{
+    background-color:rgba(223, 94, 19, 0.925);
+    font-size: 30px;
+    font-weight: bolder;
+}
+#add{
+    margin-left: 7px;
+    border-radius: 7px;
+    height: 40px;
+    background-color:rgba(223, 94, 19, 0.925);
+    color: white;
+    border-color: rgba(223, 94, 19, 0.925);
+}
+#edit{
+   
+    float: right;
+    margin-right: 30px;
+    border-radius: 7px;
+    height: 40px;
+    background-color:rgba(223, 94, 19, 0.925);
+    color: white;
+    border-color: rgba(223, 94, 19, 0.925);
+}
+#dl{
+    float: right;
+    margin-right: 15px;
+    border-radius: 7px;
+    height: 40px;
+    background-color:rgba(223, 94, 19, 0.925);
+    color: white;
+    border-color: rgba(223, 94, 19, 0.925);
+}
+
+#todo_item{
+    width: 77%;
+    height: 40px;
+    padding-left: 20px;
+}
+#ls{
+    background-color:white;
+    width: 97%;
+    
+}
+li{
+    margin-top: 30px;
+    padding-top: 5px;
+    height: 50px;
+    
+}
+.cntnt{
+    width: 70%;
+}
+</style>
+<body>
+    <div class="tp text-center p-3 text-light ">TODO APP</div>
+    <div class="container  cntnt pt-5 ">
+        
+        <div>
+            <form>
+            <input type="text" class="text-dark" id="todo_item" required placeholder="Enter TODO"><button id="add" type="submit" class="btn btn-sm" onclick="addTodo()">Add TODO</button>
+            <button id="add" class="btn btn-sm" type="submit" onclick="delAll()">Delete All</button><br>
+            </form>
+        </div>
+        <div class="pt-5" >
+                <ol id="ls">
+
+                </ol>
+        </div> 
+       
+
+   </div>
+</body>
+
+</html>
+<script src="app.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
